@@ -31,7 +31,8 @@ a {
     text-decoration: none;
 }
 
-button {
+button,
+input {
     outline: none;
     border: none;
 }
@@ -75,7 +76,6 @@ button {
 .section-label {
     display: flex;
     align-items: center;
-    justify-content: center;
     color: #696D77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -92,6 +92,7 @@ button {
 }
 
 .section-heading {
+    margin-top: 12px;
     color: var(--second-color);
     font-size: 4rem;
     font-weight: 700;
@@ -99,6 +100,7 @@ button {
 }
 
 .section-desc.lv1 {
+    margin-top: 20px;
     color: var(--desc-color);
     font-size: 1.8rem;
     font-weight: 400;
@@ -114,7 +116,8 @@ button {
 
 /* Header */
 .header {
-    margin-top: 42px;
+    margin-top: 26px;
+    padding: 16px 0;
 }
 
 .header__inner {
@@ -173,4 +176,194 @@ button {
 
 .header__sign-up {
     margin-left: 14px;
+    border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: var(--second-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+}
+
+.email-form__input {
+    padding: 0 23px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: transparent;
+}
+
+.email-form__submit {
+    margin-right: 8px;
+    min-width: 149px;
+}
+
+.hero__desc--warning {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__img-wrap {
+    width: 296px;
+    height: 562px;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-deposite {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    width: 174px;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+
+    animation: upDown 2s ease-in-out infinite;
+}
+
+.hero-deposite__title {
+    margin-left: 8px;
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-deposite__price {
+    margin-left: 19px;
+    color: #4AB5E3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: -174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #DA6464;
+    color: #FFF;
+
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+.hero-interest__percent {
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero-secured-funds {
+    position: absolute;
+    right: -74px;
+    bottom: 61px;
+    width: 124px;
+    padding: 20px 15px 21px 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    border-radius: 10px;
+    background: #439F90;
+    color: #fff;
+
+    animation: moveRight 1.25s ease-in-out infinite;
+}
+
+.hero-secured-funds__logo {
+    width: 20px;
+    height: 26px;
+}
+
+.hero-secured-funds__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-secured-funds__price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-secured-funds__title {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes moveRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
 }
