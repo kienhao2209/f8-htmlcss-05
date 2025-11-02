@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
 
@@ -100,6 +100,12 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
 
+        <!-- Embed AOS -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -154,13 +160,10 @@
                 <section class="hero__inner">
                     <!-- Left -->
                     <section class="hero__content">
-                        <span
-                            class="section-label animate__animated animate__backInLeft"
-                            >Digital Smart Wallet</span
-                        >
-                        <h1
-                            class="hero__heading animate__animated animate__bounce"
-                        >
+                        <span class="section-label" data-aos="fade-right">
+                            Digital Smart Wallet
+                        </span>
+                        <h1 class="hero__heading" data-aos="zoom-in">
                             Digital
                             <strong style="color: var(--primary-color)">
                                 Payment
@@ -168,7 +171,9 @@
                             For Everyone.
                         </h1>
                         <p
-                            class="section-desc lv1 animate__animated animate__backInUp"
+                            class="section-desc lv1"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
                         >
                             We bring together eveything that’s required to build
                             websites and apps that accept payments and send
@@ -287,7 +292,199 @@
         </section>
 
         <!-- Main content -->
+        <main style="height: 5000px">
+            <!-- How It Works -->
+            <section class="work">
+                <div class="container--1170">
+                    <div class="work__inner">
+                        <!-- Left -->
+                        <div class="work__media">
+                            <!-- Image -->
+                            <figure
+                                class="work__img-wrap"
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
+                            >
+                                <img
+                                    src="./assets/img/work-01.png"
+                                    alt=""
+                                    class="work__img"
+                                />
+                            </figure>
+
+                            <!-- Decorations -->
+                            <div class="work__logo">
+                                <svg
+                                    width="64"
+                                    height="64"
+                                    viewBox="0 0 64 64"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        width="64"
+                                        height="64"
+                                        rx="8"
+                                        fill="#7264D6"
+                                    />
+                                    <rect
+                                        x="12"
+                                        y="12"
+                                        width="40"
+                                        height="40"
+                                        rx="4"
+                                        fill="#F8FBFE"
+                                    />
+                                    <path
+                                        d="M44.9745 40.5386H18.8143C18.3647 40.5386 18.0002 40.903 18.0002 41.3527C18.0002 42.7016 19.0937 43.795 20.4426 43.795H43.3463C44.6951 43.795 45.7886 42.7016 45.7886 41.3527C45.7886 40.903 45.4241 40.5386 44.9745 40.5386Z"
+                                        fill="#7264D6"
+                                    />
+                                    <path
+                                        d="M38.4075 25.0705V24.6635C38.4075 24.355 38.2334 24.0736 37.9575 23.9352L32.2587 21.0858C32.0298 20.9714 31.7595 20.9714 31.5305 21.0858L25.8317 23.9352C25.5558 24.0736 25.3817 24.355 25.3817 24.6635V25.0705C25.3817 25.5205 25.7458 25.8847 26.1958 25.8847H37.5934C38.0434 25.8847 38.4075 25.5205 38.4075 25.0705Z"
+                                        fill="#7264D6"
+                                    />
+                                    <path
+                                        d="M27.824 27.5128H31.0804V34.0257H27.824V27.5128Z"
+                                        fill="#7264D6"
+                                    />
+                                    <path
+                                        d="M32.7084 27.5128H35.9649V34.0257H32.7084V27.5128Z"
+                                        fill="#7264D6"
+                                    />
+                                    <path
+                                        d="M23.8099 24.2563H20.4427C19.9927 24.2563 19.6285 24.6205 19.6285 25.0705V38.9104H44.1605V25.0705C44.1605 24.6205 43.7963 24.2563 43.3464 24.2563H39.9791C40.0018 24.3912 40.0356 24.5232 40.0356 24.6634V25.0705C40.0356 26.4172 38.9401 27.5128 37.5933 27.5128V34.0257H38.4074C38.8574 34.0257 39.2215 34.3898 39.2215 34.8398C39.2215 35.2898 38.8574 35.6539 38.4074 35.6539H25.3816C24.9316 35.6539 24.5675 35.2898 24.5675 34.8398C24.5675 34.3898 24.9316 34.0257 25.3816 34.0257H26.1957V27.5128C24.849 27.5128 23.7534 26.4172 23.7534 25.0705V24.6634C23.7534 24.5232 23.7872 24.3912 23.8099 24.2563Z"
+                                        fill="#7264D6"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div class="work-congratulation">
+                                <!-- Icon -->
+                                <div class="work-congratulation__icon-wrap">
+                                    <div class="work-congratulation__icon">
+                                        <svg
+                                            width="11"
+                                            height="8"
+                                            viewBox="0 0 11 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M0.5 3.5L4 7L10.5 0.5"
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="work-congratulation__info">
+                                    <span class="work-congratulation__title">
+                                        Congratulations
+                                    </span>
+                                    <p class="work-congratulation__desc">
+                                        Your account activated
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right -->
+                        <section class="work__content">
+                            <div
+                                class="section-label"
+                                data-aos="fade-down-left"
+                            >
+                                Digital Smart Wallet
+                            </div>
+                            <h2
+                                class="work__heading section-heading lv2"
+                                data-aos="fade-left"
+                            >
+                                How It Works
+                            </h2>
+
+                            <div class="work__list">
+                                <!-- Work item 1 -->
+                                <div class="work-item">
+                                    <p
+                                        class="work-item__title"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        1. Open a High Interest Checking account
+                                    </p>
+                                    <p
+                                        class="work-item__desc section-desc lv2"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or
+                                        less!
+                                    </p>
+                                </div>
+
+                                <!-- Work item 2 -->
+                                <div class="work-item">
+                                    <p
+                                        class="work-item__title"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        2. 10 point-of-sale transactions each
+                                        Month that are at least $10 each.
+                                    </p>
+                                    <p
+                                        class="work-item__desc section-desc lv2"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        Be sure to use your rewards checking
+                                        account as often as possible in order to
+                                        accue APYI
+                                    </p>
+                                </div>
+
+                                <!-- Work item 3 -->
+                                <div class="work-item">
+                                    <p
+                                        class="work-item__title"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        3. Receive up to 5.50% APY
+                                    </p>
+                                    <p
+                                        class="work-item__desc section-desc lv2"
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-duration="1500"
+                                    >
+                                        The APY you earn will be based on your
+                                        account balance and satisfying the
+                                        transaction requirement.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
+
+        <!-- Embed JS AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
