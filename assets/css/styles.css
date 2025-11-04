@@ -114,6 +114,13 @@ input {
     line-height: 1.75;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* Header */
 .header {
     margin-top: 26px;
