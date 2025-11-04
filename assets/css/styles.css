@@ -973,3 +973,138 @@ input {
 .blog-item__link:active {
     color: var(--primary-color);
 }
+
+/* App */
+.app {
+    margin-top: 160px;
+}
+
+.app__inner {
+    position: relative;
+    border-radius: 24px;
+    padding: 100px 368px;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.app__label,
+.app__desc,
+.app__heading {
+    color: #fff;
+}
+
+.app__label {
+    justify-content: center;
+}
+
+.app__label::before {
+    background: #fff;
+}
+
+.app__desc {
+    margin-top: 18px;
+    width: 435px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.app__cta-wrap {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+
+.app__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    height: 64px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.app__decor:nth-of-type(1),
+.app__decor:nth-of-type(2),
+.app__decor:nth-of-type(3),
+.app__decor:nth-of-type(4) {
+    position: absolute;
+}
+
+.app__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+
+    animation: scale 1s alternate infinite;
+}
+
+.app__decor:nth-of-type(2) {
+    bottom: 49px;
+    left: 166px;
+
+    animation: rotate 2s infinite;
+}
+
+.app__decor:nth-of-type(3) {
+    top: 49px;
+    right: 122px;
+
+    animation: rotate180 2s alternate infinite;
+}
+
+.app__decor:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
+
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes scale {
+
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(360deg);
+    }
+}
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate180 {
+
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
