@@ -131,17 +131,19 @@
                                 </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#!" class="navbar-item__link">
+                                <a href="#product" class="navbar-item__link">
                                     Products
                                 </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#!" class="navbar-item__link">
+                                <a href="#feature" class="navbar-item__link">
                                     Features
                                 </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#!" class="navbar-item__link">Blog</a>
+                                <a href="#blog" class="navbar-item__link"
+                                    >Blog</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -292,9 +294,9 @@
         </section>
 
         <!-- Main content -->
-        <main style="height: 5000px">
+        <main>
             <!-- How It Works -->
-            <section class="work">
+            <section class="work" id="product">
                 <div class="container--1170">
                     <div class="work__inner">
                         <!-- Left -->
@@ -479,7 +481,7 @@
             </section>
 
             <!-- Card -->
-            <section class="card">
+            <section class="card" id="feature">
                 <div class="container--1170">
                     <section class="card__inner">
                         <!-- Left -->
@@ -1254,7 +1256,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container--1170">
                     <section class="blog__inner">
                         <!-- Blog top -->
@@ -1627,6 +1629,134 @@
         </main>
 
         <!-- Footer -->
+        <footer class="footer">
+            <div class="container--1440">
+                <div class="footer__inner">
+                    <div class="footer__row">
+                        <!-- Column 1 -->
+                        <div class="footer__column">
+                            <!-- Logo -->
+                            <a href="#!" class="footer__logo"
+                                ><img
+                                    src="./assets/img/logo.svg"
+                                    alt="CeloBank"
+                            /></a>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">Home</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">Abouts</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Growers
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Merchants
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="footer__column">
+                            <h3 class="footer__heading">Socials</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#!" class="footer__link">
+                                        Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4 -->
+                        <div class="footer__column">
+                            <!-- Info -->
+                            <div class="footer__info">
+                                <h3 class="footer__heading">Head Office</h3>
+                                <p class="footer__desc">
+                                    Xilliams Corner Wine © 2017. 1112 A Market
+                                    St # Ste B22, Charlottesville, CA 45565
+                                </p>
+                            </div>
+
+                            <!-- Form -->
+                            <div class="footer__form-wrap">
+                                <form action="" class="footer__form">
+                                    <label
+                                        for="email"
+                                        class="footer__form-label"
+                                    >
+                                        News letter
+                                    </label>
+
+                                    <div class="footer__form-input-wrap">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Email address..."
+                                            class="footer__form-input"
+                                        />
+
+                                        <button
+                                            type="submit"
+                                            class="btn footer__form-submit btn--primary"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__row">
+                        <a href="#!" class="footer__link footer__email-text">
+                            email@gmail.com
+                        </a>
+                        <a href="#!" class="footer__link footer__phone">
+                            (123) 456-7890
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright-wrap">
+                <p class="footer__copyright">
+                    © 2020 Ligft Media All rights reserved.
+                </p>
+            </div>
+        </footer>
 
         <!-- Embed JS AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
