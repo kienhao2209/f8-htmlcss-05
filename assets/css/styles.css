@@ -751,6 +751,11 @@ input {
     background: #F2F2FA;
 }
 
+.payment__method-item:hover {
+    cursor: pointer;
+    background: #F9EA63;
+}
+
 /* Client */
 .client {
     margin-top: 160px;
